@@ -11,17 +11,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MedWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" alpha="0.69999999999999996" text="Last:" id="Sgu-oQ-1lf"/>
-                        <button width="1" height="50" alignment="left" title="Heart Rate" id="VPM-KJ-T85">
+                        <label width="1" alignment="left" alpha="0.55000000000000004" text="Last: Mon 8:00pm" textAlignment="center" id="Sgu-oQ-1lf"/>
+                        <imageView height="62" alignment="center" image="medicine" contentMode="scaleAspectFit" id="T0M-XS-tB4"/>
+                        <button width="1" height="40" alignment="left" title="Heart Rate" id="VPM-KJ-T85">
                             <color key="titleColor" red="1" green="0.27099776180000001" blue="0.16068220229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
                             <connections>
                                 <action selector="heartRateTapped" destination="AgC-eL-Hgc" id="Lh7-mf-lbr"/>
                             </connections>
                         </button>
-                        <button width="1" height="50" alignment="left" title="Take Meds" id="vH2-Qf-9G6">
+                        <button width="1" height="40" alignment="left" title="Record Entry" id="vH2-Qf-9G6">
                             <color key="titleColor" red="0.65810105320000001" green="0.34699762140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
                             <connections>
                                 <action selector="takeMedsTapped" destination="AgC-eL-Hgc" id="KC0-OJ-rUl"/>
+                                <segue destination="7BA-rX-6am" kind="push" id="jl6-7w-84c"/>
                             </connections>
                         </button>
                     </items>
@@ -31,12 +35,21 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="327.5"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="wGA-FU-cOo">
             <objects>
-                <controller id="7BA-rX-6am"/>
+                <controller id="7BA-rX-6am">
+                    <items>
+                        <imageView height="111" alignment="center" image="completed" contentMode="scaleAspectFit" id="xRP-tz-bL8"/>
+                        <button width="1" alignment="left" title="Add New" id="tva-hJ-Oj8">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="gN1-CR-Yjq"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="451" y="345"/>
         </scene>
@@ -72,4 +85,8 @@
             <point key="canvasLocation" x="840" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="completed" width="450" height="450"/>
+        <image name="medicine" width="852" height="480"/>
+    </resources>
 </document>

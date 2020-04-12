@@ -36,9 +36,9 @@ class InterfaceController: WKInterfaceController {
     @IBAction func takeMedsTapped() {
         tookMeds = !tookMeds
         if (tookMeds) {
-            takeMedsButton.setTitle("Took Meds")
+            print("Took Meds")
         } else {
-            takeMedsButton.setTitle("Take Meds")
+            print("Need to take meds")
         }
             
     }
