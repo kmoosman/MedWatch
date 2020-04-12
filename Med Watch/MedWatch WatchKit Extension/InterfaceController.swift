@@ -40,6 +40,7 @@ class InterfaceController: WKInterfaceController {
         } else {
             print("Need to take meds")
         }
+        self.pushController(withName: "Add New", context: nil)
             
     }
     

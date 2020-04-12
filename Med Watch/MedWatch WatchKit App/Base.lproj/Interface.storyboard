@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15400" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7BA-rX-6am">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -25,7 +25,6 @@
                             <fontDescription key="font" type="system" pointSize="14"/>
                             <connections>
                                 <action selector="takeMedsTapped" destination="AgC-eL-Hgc" id="KC0-OJ-rUl"/>
-                                <segue destination="7BA-rX-6am" kind="push" id="jl6-7w-84c"/>
                             </connections>
                         </button>
                     </items>
@@ -35,12 +34,12 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="327.5"/>
+            <point key="canvasLocation" x="298" y="346"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Add new-->
         <scene sceneID="wGA-FU-cOo">
             <objects>
-                <controller id="7BA-rX-6am">
+                <controller identifier="Add New" id="7BA-rX-6am" userLabel="Add new" customClass="InterfaceController" customModule="MedWatch_WatchKit_Extension">
                     <items>
                         <imageView height="111" alignment="center" image="completed" contentMode="scaleAspectFit" id="xRP-tz-bL8"/>
                         <button width="1" alignment="left" title="Add New" id="tva-hJ-Oj8">
@@ -51,7 +50,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="451" y="345"/>
+            <point key="canvasLocation" x="43" y="338"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
