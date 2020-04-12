@@ -11,18 +11,34 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MedWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Take Meds" id="VPM-KJ-T85">
+                        <label alignment="left" alpha="0.69999999999999996" text="Last:" id="Sgu-oQ-1lf"/>
+                        <button width="1" height="50" alignment="left" title="Heart Rate" id="VPM-KJ-T85">
+                            <color key="titleColor" red="1" green="0.27099776180000001" blue="0.16068220229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="UxG-qH-F3l"/>
+                                <action selector="heartRateTapped" destination="AgC-eL-Hgc" id="Lh7-mf-lbr"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="50" alignment="left" title="Take Meds" id="vH2-Qf-9G6">
+                            <color key="titleColor" red="0.65810105320000001" green="0.34699762140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="takeMedsTapped" destination="AgC-eL-Hgc" id="KC0-OJ-rUl"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="myButton" destination="VPM-KJ-T85" id="XmX-yh-cWE"/>
+                        <outlet property="heartRateButton" destination="VPM-KJ-T85" id="p1m-hc-Mqw"/>
+                        <outlet property="takeMedsButton" destination="vH2-Qf-9G6" id="QLw-hj-JUH"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="wGA-FU-cOo">
+            <objects>
+                <controller id="7BA-rX-6am"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -53,7 +69,7 @@
             <objects>
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="MedWatch_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="840" y="345"/>
         </scene>
     </scenes>
 </document>

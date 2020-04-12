@@ -12,7 +12,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var myButton: WKInterfaceButton!
+    @IBOutlet var takeMedsButton: WKInterfaceButton!
+    @IBOutlet var heartRateButton: WKInterfaceButton!
+    
     var tookMeds = false
     
     override func awake(withContext context: Any?) {
@@ -31,15 +33,25 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    @IBAction func buttonTapped() {
+    @IBAction func takeMedsTapped() {
         tookMeds = !tookMeds
         if (tookMeds) {
-            myButton.setTitle("Took Meds")
+            takeMedsButton.setTitle("Took Meds")
         } else {
-            myButton.setTitle("Take Meds")
+            takeMedsButton.setTitle("Take Meds")
         }
             
-            
     }
-
+    
+    @IBAction func heartRateTapped() {
+        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain, completion: {results in
+            guard let results = results else { return }
+            OperationQueue.main.addOperation {
+                self.dismissTextInputController()
+                self.setTitle(results[0] as? String)
+            }
+        
+       })
+    }
+ 
 }
