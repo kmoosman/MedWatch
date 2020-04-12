@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC08DC8724438CE200204B24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DC8624438CE200204B24 /* AppDelegate.swift */; };
+		FC08DC8924438CE200204B24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DC8824438CE200204B24 /* SceneDelegate.swift */; };
+		FC08DC8B24438CE200204B24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DC8A24438CE200204B24 /* ViewController.swift */; };
+		FC08DC8E24438CE200204B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC08DC8C24438CE200204B24 /* Main.storyboard */; };
+		FC08DC9124438CE200204B24 /* Med_Watch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC08DC8F24438CE200204B24 /* Med_Watch.xcdatamodeld */; };
+		FC08DC9324438CE300204B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC08DC9224438CE300204B24 /* Assets.xcassets */; };
+		FC08DC9624438CE300204B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC08DC9424438CE300204B24 /* LaunchScreen.storyboard */; };
+		FC08DCA124438CE300204B24 /* Med_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DCA024438CE300204B24 /* Med_WatchTests.swift */; };
+		FC08DCAC24438CE300204B24 /* Med_WatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DCAB24438CE300204B24 /* Med_WatchUITests.swift */; };
+		FC08DCBF24438CF900204B24 /* MedWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FC08DCBE24438CF900204B24 /* MedWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC08DCC524438CF900204B24 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC08DCC324438CF900204B24 /* Interface.storyboard */; };
+		FC08DCC724438CFA00204B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC08DCC624438CFA00204B24 /* Assets.xcassets */; };
+		FC08DCCE24438CFA00204B24 /* MedWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC08DCCD24438CFA00204B24 /* MedWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC08DCD324438CFA00204B24 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DCD224438CFA00204B24 /* InterfaceController.swift */; };
+		FC08DCD524438CFA00204B24 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DCD424438CFA00204B24 /* ExtensionDelegate.swift */; };
+		FC08DCD724438CFA00204B24 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC08DCD624438CFA00204B24 /* NotificationController.swift */; };
+		FC08DCD924438CFA00204B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC08DCD824438CFA00204B24 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC08DC9D24438CE300204B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC08DC7B24438CE200204B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC08DC8224438CE200204B24;
+			remoteInfo = "Med Watch";
+		};
+		FC08DCA824438CE300204B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC08DC7B24438CE200204B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC08DC8224438CE200204B24;
+			remoteInfo = "Med Watch";
+		};
+		FC08DCC024438CF900204B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC08DC7B24438CE200204B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC08DCBD24438CF900204B24;
+			remoteInfo = "MedWatch WatchKit App";
+		};
+		FC08DCCF24438CFA00204B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC08DC7B24438CE200204B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC08DCCC24438CFA00204B24;
+			remoteInfo = "MedWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC08DCDF24438CFB00204B24 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC08DCCE24438CFA00204B24 /* MedWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCE324438CFB00204B24 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FC08DCBF24438CF900204B24 /* MedWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC08DC8324438CE200204B24 /* Med Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Med Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DC8624438CE200204B24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC08DC8824438CE200204B24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC08DC8A24438CE200204B24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC08DC8D24438CE200204B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC08DC9024438CE200204B24 /* Med_Watch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Med_Watch.xcdatamodel; sourceTree = "<group>"; };
+		FC08DC9224438CE300204B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC08DC9524438CE300204B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC08DC9724438CE300204B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC08DC9C24438CE300204B24 /* Med WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Med WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DCA024438CE300204B24 /* Med_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Med_WatchTests.swift; sourceTree = "<group>"; };
+		FC08DCA224438CE300204B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC08DCA724438CE300204B24 /* Med WatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Med WatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DCAB24438CE300204B24 /* Med_WatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Med_WatchUITests.swift; sourceTree = "<group>"; };
+		FC08DCAD24438CE300204B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC08DCBB24438CF900204B24 /* MedWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DCBE24438CF900204B24 /* MedWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DCC424438CF900204B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FC08DCC624438CFA00204B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC08DCC824438CFA00204B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC08DCCD24438CFA00204B24 /* MedWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MedWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC08DCD224438CFA00204B24 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FC08DCD424438CFA00204B24 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FC08DCD624438CFA00204B24 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FC08DCD824438CFA00204B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC08DCDA24438CFA00204B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC08DCDB24438CFB00204B24 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC08DC8024438CE200204B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DC9924438CE300204B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCA424438CE300204B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCCA24438CFA00204B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC08DC7A24438CE200204B24 = {
+			isa = PBXGroup;
+			children = (
+				FC08DC8524438CE200204B24 /* Med Watch */,
+				FC08DC9F24438CE300204B24 /* Med WatchTests */,
+				FC08DCAA24438CE300204B24 /* Med WatchUITests */,
+				FC08DCC224438CF900204B24 /* MedWatch WatchKit App */,
+				FC08DCD124438CFA00204B24 /* MedWatch WatchKit Extension */,
+				FC08DC8424438CE200204B24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC08DC8424438CE200204B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DC8324438CE200204B24 /* Med Watch.app */,
+				FC08DC9C24438CE300204B24 /* Med WatchTests.xctest */,
+				FC08DCA724438CE300204B24 /* Med WatchUITests.xctest */,
+				FC08DCBB24438CF900204B24 /* MedWatch.app */,
+				FC08DCBE24438CF900204B24 /* MedWatch WatchKit App.app */,
+				FC08DCCD24438CFA00204B24 /* MedWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC08DC8524438CE200204B24 /* Med Watch */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DC8624438CE200204B24 /* AppDelegate.swift */,
+				FC08DC8824438CE200204B24 /* SceneDelegate.swift */,
+				FC08DC8A24438CE200204B24 /* ViewController.swift */,
+				FC08DC8C24438CE200204B24 /* Main.storyboard */,
+				FC08DC9224438CE300204B24 /* Assets.xcassets */,
+				FC08DC9424438CE300204B24 /* LaunchScreen.storyboard */,
+				FC08DC9724438CE300204B24 /* Info.plist */,
+				FC08DC8F24438CE200204B24 /* Med_Watch.xcdatamodeld */,
+			);
+			path = "Med Watch";
+			sourceTree = "<group>";
+		};
+		FC08DC9F24438CE300204B24 /* Med WatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DCA024438CE300204B24 /* Med_WatchTests.swift */,
+				FC08DCA224438CE300204B24 /* Info.plist */,
+			);
+			path = "Med WatchTests";
+			sourceTree = "<group>";
+		};
+		FC08DCAA24438CE300204B24 /* Med WatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DCAB24438CE300204B24 /* Med_WatchUITests.swift */,
+				FC08DCAD24438CE300204B24 /* Info.plist */,
+			);
+			path = "Med WatchUITests";
+			sourceTree = "<group>";
+		};
+		FC08DCC224438CF900204B24 /* MedWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DCC324438CF900204B24 /* Interface.storyboard */,
+				FC08DCC624438CFA00204B24 /* Assets.xcassets */,
+				FC08DCC824438CFA00204B24 /* Info.plist */,
+			);
+			path = "MedWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		FC08DCD124438CFA00204B24 /* MedWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC08DCD224438CFA00204B24 /* InterfaceController.swift */,
+				FC08DCD424438CFA00204B24 /* ExtensionDelegate.swift */,
+				FC08DCD624438CFA00204B24 /* NotificationController.swift */,
+				FC08DCD824438CFA00204B24 /* Assets.xcassets */,
+				FC08DCDA24438CFA00204B24 /* Info.plist */,
+				FC08DCDB24438CFB00204B24 /* PushNotificationPayload.apns */,
+			);
+			path = "MedWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC08DC8224438CE200204B24 /* Med Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCB024438CE300204B24 /* Build configuration list for PBXNativeTarget "Med Watch" */;
+			buildPhases = (
+				FC08DC7F24438CE200204B24 /* Sources */,
+				FC08DC8024438CE200204B24 /* Frameworks */,
+				FC08DC8124438CE200204B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Med Watch";
+			productName = "Med Watch";
+			productReference = FC08DC8324438CE200204B24 /* Med Watch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC08DC9B24438CE300204B24 /* Med WatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCB324438CE300204B24 /* Build configuration list for PBXNativeTarget "Med WatchTests" */;
+			buildPhases = (
+				FC08DC9824438CE300204B24 /* Sources */,
+				FC08DC9924438CE300204B24 /* Frameworks */,
+				FC08DC9A24438CE300204B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC08DC9E24438CE300204B24 /* PBXTargetDependency */,
+			);
+			name = "Med WatchTests";
+			productName = "Med WatchTests";
+			productReference = FC08DC9C24438CE300204B24 /* Med WatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC08DCA624438CE300204B24 /* Med WatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCB624438CE300204B24 /* Build configuration list for PBXNativeTarget "Med WatchUITests" */;
+			buildPhases = (
+				FC08DCA324438CE300204B24 /* Sources */,
+				FC08DCA424438CE300204B24 /* Frameworks */,
+				FC08DCA524438CE300204B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC08DCA924438CE300204B24 /* PBXTargetDependency */,
+			);
+			name = "Med WatchUITests";
+			productName = "Med WatchUITests";
+			productReference = FC08DCA724438CE300204B24 /* Med WatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FC08DCBA24438CF900204B24 /* MedWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCE424438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch" */;
+			buildPhases = (
+				FC08DCB924438CF900204B24 /* Resources */,
+				FC08DCE324438CFB00204B24 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC08DCC124438CF900204B24 /* PBXTargetDependency */,
+			);
+			name = MedWatch;
+			productName = MedWatch;
+			productReference = FC08DCBB24438CF900204B24 /* MedWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		FC08DCBD24438CF900204B24 /* MedWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCE024438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch WatchKit App" */;
+			buildPhases = (
+				FC08DCBC24438CF900204B24 /* Resources */,
+				FC08DCDF24438CFB00204B24 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC08DCD024438CFA00204B24 /* PBXTargetDependency */,
+			);
+			name = "MedWatch WatchKit App";
+			productName = "MedWatch WatchKit App";
+			productReference = FC08DCBE24438CF900204B24 /* MedWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FC08DCCC24438CFA00204B24 /* MedWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC08DCDC24438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch WatchKit Extension" */;
+			buildPhases = (
+				FC08DCC924438CFA00204B24 /* Sources */,
+				FC08DCCA24438CFA00204B24 /* Frameworks */,
+				FC08DCCB24438CFA00204B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MedWatch WatchKit Extension";
+			productName = "MedWatch WatchKit Extension";
+			productReference = FC08DCCD24438CFA00204B24 /* MedWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC08DC7B24438CE200204B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Katie Moosman";
+				TargetAttributes = {
+					FC08DC8224438CE200204B24 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FC08DC9B24438CE300204B24 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FC08DC8224438CE200204B24;
+					};
+					FC08DCA624438CE300204B24 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = FC08DC8224438CE200204B24;
+					};
+					FC08DCBA24438CF900204B24 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FC08DCBD24438CF900204B24 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					FC08DCCC24438CFA00204B24 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = FC08DC7E24438CE200204B24 /* Build configuration list for PBXProject "Med Watch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC08DC7A24438CE200204B24;
+			productRefGroup = FC08DC8424438CE200204B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC08DC8224438CE200204B24 /* Med Watch */,
+				FC08DC9B24438CE300204B24 /* Med WatchTests */,
+				FC08DCA624438CE300204B24 /* Med WatchUITests */,
+				FC08DCBA24438CF900204B24 /* MedWatch */,
+				FC08DCBD24438CF900204B24 /* MedWatch WatchKit App */,
+				FC08DCCC24438CFA00204B24 /* MedWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC08DC8124438CE200204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DC9624438CE300204B24 /* LaunchScreen.storyboard in Resources */,
+				FC08DC9324438CE300204B24 /* Assets.xcassets in Resources */,
+				FC08DC8E24438CE200204B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DC9A24438CE300204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCA524438CE300204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCB924438CF900204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCBC24438CF900204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DCC724438CFA00204B24 /* Assets.xcassets in Resources */,
+				FC08DCC524438CF900204B24 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCCB24438CFA00204B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DCD924438CFA00204B24 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC08DC7F24438CE200204B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DC8B24438CE200204B24 /* ViewController.swift in Sources */,
+				FC08DC8724438CE200204B24 /* AppDelegate.swift in Sources */,
+				FC08DC9124438CE200204B24 /* Med_Watch.xcdatamodeld in Sources */,
+				FC08DC8924438CE200204B24 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DC9824438CE300204B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DCA124438CE300204B24 /* Med_WatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCA324438CE300204B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DCAC24438CE300204B24 /* Med_WatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08DCC924438CFA00204B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC08DCD724438CFA00204B24 /* NotificationController.swift in Sources */,
+				FC08DCD524438CFA00204B24 /* ExtensionDelegate.swift in Sources */,
+				FC08DCD324438CFA00204B24 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC08DC9E24438CE300204B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC08DC8224438CE200204B24 /* Med Watch */;
+			targetProxy = FC08DC9D24438CE300204B24 /* PBXContainerItemProxy */;
+		};
+		FC08DCA924438CE300204B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC08DC8224438CE200204B24 /* Med Watch */;
+			targetProxy = FC08DCA824438CE300204B24 /* PBXContainerItemProxy */;
+		};
+		FC08DCC124438CF900204B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC08DCBD24438CF900204B24 /* MedWatch WatchKit App */;
+			targetProxy = FC08DCC024438CF900204B24 /* PBXContainerItemProxy */;
+		};
+		FC08DCD024438CFA00204B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC08DCCC24438CFA00204B24 /* MedWatch WatchKit Extension */;
+			targetProxy = FC08DCCF24438CFA00204B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC08DC8C24438CE200204B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC08DC8D24438CE200204B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC08DC9424438CE300204B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC08DC9524438CE300204B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC08DCC324438CF900204B24 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC08DCC424438CF900204B24 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC08DCAE24438CE300204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC08DCAF24438CE300204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC08DCB124438CE300204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC08DCB224438CE300204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med Watch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC08DCB424438CE300204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med WatchTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Med Watch.app/Med Watch";
+			};
+			name = Debug;
+		};
+		FC08DCB524438CE300204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med WatchTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-WatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Med Watch.app/Med Watch";
+			};
+			name = Release;
+		};
+		FC08DCB724438CE300204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Med Watch";
+			};
+			name = Debug;
+		};
+		FC08DCB824438CE300204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "Med WatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Med-WatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Med Watch";
+			};
+			name = Release;
+		};
+		FC08DCDD24438CFB00204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "MedWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		FC08DCDE24438CFB00204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				INFOPLIST_FILE = "MedWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		FC08DCE124438CFB00204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				IBSC_MODULE = MedWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "MedWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		FC08DCE224438CFB00204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				IBSC_MODULE = MedWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "MedWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		FC08DCE524438CFB00204B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FC08DCE624438CFB00204B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NJLA45H69R;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.MedWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC08DC7E24438CE200204B24 /* Build configuration list for PBXProject "Med Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCAE24438CE300204B24 /* Debug */,
+				FC08DCAF24438CE300204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCB024438CE300204B24 /* Build configuration list for PBXNativeTarget "Med Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCB124438CE300204B24 /* Debug */,
+				FC08DCB224438CE300204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCB324438CE300204B24 /* Build configuration list for PBXNativeTarget "Med WatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCB424438CE300204B24 /* Debug */,
+				FC08DCB524438CE300204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCB624438CE300204B24 /* Build configuration list for PBXNativeTarget "Med WatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCB724438CE300204B24 /* Debug */,
+				FC08DCB824438CE300204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCDC24438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCDD24438CFB00204B24 /* Debug */,
+				FC08DCDE24438CFB00204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCE024438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCE124438CFB00204B24 /* Debug */,
+				FC08DCE224438CFB00204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC08DCE424438CFB00204B24 /* Build configuration list for PBXNativeTarget "MedWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC08DCE524438CFB00204B24 /* Debug */,
+				FC08DCE624438CFB00204B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC08DC8F24438CE200204B24 /* Med_Watch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC08DC9024438CE200204B24 /* Med_Watch.xcdatamodel */,
+			);
+			currentVersion = FC08DC9024438CE200204B24 /* Med_Watch.xcdatamodel */;
+			path = Med_Watch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC08DC7B24438CE200204B24 /* Project object */;
+}
